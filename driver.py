@@ -1,8 +1,8 @@
 import sys
-import csaermath as math
+import factorial as f
 
 def main():
-    print('2 * 3 = ' + str(math.multiply(2, 3)))
+    print('10! = ' + str(f.factorial(10)))
 
 if __name__ == '__main__':
     main()

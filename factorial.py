@@ -1,14 +1,11 @@
 
-def multiply(a, b):
-	return a * b
-
 # Factorial
 #Author: Kyle Zalewski
 #This function takes one integer argument, the number for which the calling routine
 # expects the factorial returned
 # return value is of type integer
 
-def fact( n ):
+def factorial( n ):
 		m = n - 1
 
 		#while loop to iteratively calculate factorial
