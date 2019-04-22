@@ -10,14 +10,14 @@ def factorial( n ):
 
 		#while loop to iteratively calculate factorial
 		while m > 0:
-			#uncomment line 13 when multiplication function has been completed
+			#uncomment line 16 when multiplication function has been completed
 			#rename function call as appropriate
-			#comment out line 16
+			#comment out line 17
 			n = multiply(n, m)
-			n *= m
-			#uncomment line 20 when subtraction function has been completed
+			#n *= m
+			#uncomment line 21 when subtraction function has been completed
 			#rename/modify function call as appropriate
-			#comment out line 21
+			#comment out line 22
 			#m = subt(m, 1)
 			m -= 1
 
