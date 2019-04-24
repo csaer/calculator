@@ -26,7 +26,7 @@ class Calc:
 
     def ncr(self, a, b):
         n = self.factorial(a)
-        d = self.mul(self.factorial(a), self.factorial(self.sub(a, b)))
+        d = self.mul(self.factorial(b), self.factorial(self.sub(a, b)))
         return self.div(n, d)
         
 
