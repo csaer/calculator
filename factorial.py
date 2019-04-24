@@ -1,3 +1,6 @@
+#this allows us to import the function multiply from the mult.py file
+from mult import multiply     
+
 
 # Factorial
 #Author: Kyle Zalewski
