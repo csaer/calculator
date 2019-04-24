@@ -1,6 +1,9 @@
 import code
 import math
 
+#usage: create object with "calc()"
+#then call functions with "calc.func(x, y)"
+
 class Calc:
     def add(self, a, b):
         return a + b
