@@ -10,4 +10,4 @@ from factorial import factorial
 def ncr(a, b):
     n = factorial(a)
     d = multiply(factorial(b), factorial(sub(a, b)))
-    return self.div(n, d)
+    return n/d
