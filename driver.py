@@ -2,6 +2,7 @@
 
 import sys
 import factorial as f
+import traceback
 
 def usage():
 	print("This requires 1 argument.\nThe given argument should be a number.")
@@ -10,7 +11,14 @@ def main():
     print(sys.argv[1] +'! = ' + str(f.factorial(float(sys.argv[1]))))
 
 if __name__ == '__main__':
-	if len(sys.argv) > 1 and type(float(sys.argv[1])) == type(1.1):
-		main()
+	if len(sys.argv) > 1:
+		try:
+			float(sys.argv[1])
+			main()
+		except Exception as e:
+			traceback.print_exc()
+			print("\n")
+			usage()
+
 	else:
 		usage()
