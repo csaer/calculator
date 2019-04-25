@@ -6,7 +6,7 @@ from factorial import factorial
 #nCr
 #B. Tschuy 4-25-19
 #Input: numbers a & b
-#Output: quantity of combinations of 'a' distinct elements of set [1..b]
+#Output: quantity of combinations of 'b' distinct elements of set [1..a]
 
 def ncr(a, b):
     n = factorial(a)
