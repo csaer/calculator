@@ -1,5 +1,6 @@
 #this allows us to import the function multiply from the mult.py file
-from mult import multiply     
+from mult import multiply   
+from subtract import subtract  
 
 
 # Factorial
@@ -9,7 +10,7 @@ from mult import multiply
 # return value is of type integer
 
 def factorial( n ):
-		m = n - 1
+		m = subtract(n,1)
 
 		#while loop to iteratively calculate factorial
 		while m > 0:
@@ -21,8 +22,7 @@ def factorial( n ):
 			#uncomment line 21 when subtraction function has been completed
 			#rename/modify function call as appropriate
 			#comment out line 22
-			#m = subt(m, 1)
-			m -= 1
+			m = subtract(m,1)
 
 		#return calculated factorial
 		return n
