@@ -13,7 +13,6 @@ def main():
 if __name__ == '__main__':
 	if len(sys.argv) > 1:
 		try:
-			float(sys.argv[1])
 			main()
 		except Exception as e:
 			traceback.print_exc()
