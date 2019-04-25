@@ -1,6 +1,7 @@
 from mult import multiply   
 from subtract import subtract 
 from factorial import factorial
+#from divide import divide
 
 #nCr
 #B. Tschuy 4-25-19
@@ -10,4 +11,4 @@ from factorial import factorial
 def ncr(a, b):
     n = factorial(a)
     d = multiply(factorial(b), factorial(sub(a, b)))
-    return n/d
+    return n/d  #use divide() when avail
