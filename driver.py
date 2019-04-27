@@ -10,7 +10,7 @@ def main():
     print('10! = ' + str(f.factorial(10)))
     print('10 - 5 = ' + str(s.subtract(10,5)))
     print('10 * 50 = ' + str(m.multiply(10,50)))
-    print('2 + 3 = ' + str(add.ADD(2,3)))
+    print('2.2 + 3.5 = ' + str(add.ADD(2.2,3.5)))
 
 if __name__ == '__main__':
     main()
