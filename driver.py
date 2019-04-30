@@ -2,13 +2,22 @@
 
 import sys
 import factorial as f
-import subtract as s
-import mult as m
+import traceback
+
+def usage():
+	print("This requires 1 argument.\nThe given argument should be a number.")
 
 def main():
-    print('10! = ' + str(f.factorial(10)))
-    print('10 - 5 = ' + str(s.subtract(10,5)))
-    print('10 * 50 = ' + str(m.multiply(10,50)))
+    print(sys.argv[1] +'! = ' + str(f.factorial(float(sys.argv[1]))))
 
 if __name__ == '__main__':
-    main()
+	if len(sys.argv) > 1:
+		try:
+			main()
+		except Exception as e:
+			traceback.print_exc()
+			print("\n")
+			usage()
+
+	else:
+		usage()
